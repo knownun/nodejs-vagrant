@@ -1,6 +1,6 @@
 # nodejs-vagrant
 
-Provisions a clean Ubuntu 12.04 32-bit server instance with all needed Node.js development tools (Node.js, git, vim); services (MongoDB, Redis, GitHub, Heroku, Travis-CI).
+Provisions a clean Ubuntu 12.04 32-bit server instance with all needed Node.js development tools (Node.js, git, vim); services (GitHub).
 
 ## Install Vagrant & VirtualBox
 
@@ -32,7 +32,7 @@ vagrant up
 vagrant ssh
 ```
 
-Done! 
+Done!
 
 ## Post-Setup
 
@@ -58,11 +58,6 @@ Additionally for convenience, append this line to your ```/etc/hosts``` file:
 ```192.168.33.10   vagrant.localhost```
 
 ## Services
-
-### MongoDB & Redis
-
-Verify from CLI by running ```mongo``` and ```redis-cli```.
-
 ### GitHub
 
 ```
@@ -71,20 +66,6 @@ ssh-keygen -t rsa
 git config --global user.name '<your name>'
 git config --global user.email <your email>
 ```
-
-### Heroku
-
-```
-Run the following commands to finish setting up Heroku:
-heroku login
-heroku keys:add
-```
-
-### Travis-CI
-
-```travis login```
-or
-```travis login --pro```
 
 ## Troubleshooting
 
